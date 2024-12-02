@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPizza</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="Pictures/Main/iPizza%20Logo.png" type="image/jpeg">
+</head>
+
+<body>
+
+<header>
+    <h1>iPizza 🍕</h1>
+    <div class="theme-switcher">
+        <label class="switch">
+            <input type="checkbox" id="themeToggle">
+            <span class="slider"></span>
+        </label>
+    </div>
+    <div class="contact-container">
+        <button class="contact-button" id="contactButton">Contact Us</button>
+    </div>
+    <div class="translate-container">
+        <label for="languageSelect"></label>
+        <select id="languageSelect">
+            <option value="en" selected>English</option>
+            <option value="ru">Русский</option>
+            <option value="it">Italiano</option>
+        </select>
+    </div>
+    <div class="search-container">
+        <button id="searchButton">🔍</button>
+        <div id="searchPanel" class="hidden">
+            <label>
+                <input type="text" placeholder="Search...">
+            </label>
+        </div>
+    </div>
+    <button>
+        <span>🛒</span>
+    </button>
+</header>
+
+<div class="hero">
+    <div class="hero-overlay">
+        <h2>Welcome to iPizza 🍕</h2>
+        <p>Delicious pizza and more.</p>
+        <p>Get 20% off your first order !</p>
+    </div>
+</div>
+
+<nav>
+    <a href="#" class="active">Popular</a>
+    <a href="#">Pizza</a>
+    <a href="#">Pasta</a>
+    <a href="#">Salad</a>
+    <a href="#">Dessert</a>
+    <a href="#">Drinks</a>
+    <a href="#">Cocktails</a>
+</nav>
+
+<section class="section"> <!-- Popular -->
+    <h2>Pizza</h2>
+        <div class="top-picks">
+            <div class="top-pick">
+                <img src="Pictures/Pizza/IPizza.webp" alt="IPizza">
+                <h3>IPizza</h3>
+                <div>
+                    <p>Romaine Lettuce, Red Onion, Mozzarella Cheese, Tomato Sauce, Olive Oil</p>
+                    <p>$24</p>
+                </div>
+            </div>
+            <div class="top-pick">
+                <img src="Pictures/Pizza/Cheese%20Pizza.png" alt="Cheese Pizza">
+                <h3>Cheese Pizza</h3>
+                <div>
+                    <p>Tomato Sauce, Cheese</p>
+                    <p>$15</p>
+                </div>
+            </div>
+            <div class="top-pick">
+                <img src="Pictures/Pizza/Spicy%20Thai%20Pizza.png" alt="Spicy Thai Pizza">
+                <h3>Spicy Thai</h3>
+                <div>
+                    <p>Mozzarella Cheese, Grilled Chicken, Red Bell Peppers, Carrots, Red onions, Green onions, Cilantro, Lime Wedges</p>
+                    <p>$25</p>
+                </div>
+            </div>
+        </div>
+    <h2>Pasta</h2>
+        <div class="top-picks">
+            <div class="top-pick">
+                <img src="Pictures/Pasta/Spaghetti%20Pasta.jpg" alt="Spaghetti Pasta">
+                <h3>Spaghetti Pasta</h3>
+                <div>
+                    <p>Milled Wheat, Water, Tomato Sauce, Tomatoes, Sugar, Salt, Cheese Paste</p>
+                    <p>$10</p>
+                </div>
+            </div>
+            <div class="top-pick">
+                <img src="Pictures/Pasta/Chicken%20Chorizo%20Ragu.jpg" alt="Chicken Chorizo Ragu">
+                <h3>Chicken Chorizo Ragu</h3>
+                <div>
+                    <p>Red Onion, Garlic Cloves, Tomatoes, Lemon, Paprika, Chicken Thighs</p>
+                    <p>$16</p>
+                </div>
+            </div>
+            <div class="top-pick">
+                <img src="Pictures/Pasta/Sausage%20Ragu.jpg" alt="Sausage Ragu">
+                <h3>Sausage Ragu</h3>
+                <div>
+                    <p>Sausage, Olive Oil, Onion, Celery, Chili Flakes, Black Pepper, Garlic, Chicken Stock, Parmesan Cheese</p>
+                    <p>$18</p>
+                </div>
+            </div>
+            <div class="top-pick">
+                <img src="Pictures/Pasta/Ultimate%20Spaghetti%20Carbonara.jpg" alt="Ultimate Spaghetti Carbonara">
+                <h3>Ultimate Spaghetti Carbonara</h3>
+                <div>
+                    <p>Pecorino Cheese, Egg, Spaghetti, Olive Oil, Garlic, Parmesan Cheese</p>
+                    <p>$15</p>
+                </div>
+            </div>
+        </div>
+    <h2>Salad</h2>
+        <div class="top-picks">
+            <div class="top-pick">
+                <img src="Pictures/Salad/Salmon%20Salad.png" alt="Salmon Salad">
+                <h3>Salmon Salad</h3>
+                <div>
+                    <p>Atlantic Salmon, Romaine Lettuce, Red Onion, Red Potato, Shredded Carrot, Tomato, Lemon Vinaigrette Dressing</p>
+                    <p>$12.5</p>
+                </div>
+            </div>
+            <div class="top-pick">
+                <img src="Pictures/Salad/Caesar%20Salad.jpg" alt="Caesar Salad">
+                <h3>Caesar Salad</h3>
+                <div>
+                    <p>Egg, Lemon Juice, Mustard, Olive Oil, Parmesan Cheese</p>
+                    <p>$16.75</p>
+                </div>
+            </div>
+        </div>
+    <h2>Dessert</h2>
+        <div class="top-picks">
+            <div class="top-pick">
+                <img src="Pictures/Dessert/Sticky%20Toffee%20Pudding.jpg" alt="Sticky Toffee Pudding">
+                <h3>Sticky Toffee Pudding</h3>
+                <div>
+                    <p>Sugar, Milk, Egg, Rice Bran Oil, Chocolate Sauce, Cream</p>
+                    <p>$9.25</p>
+                </div>
+            </div>
+            <div class="top-pick">
+                <img src="Pictures/Dessert/Tiramisu.png" alt="Tiramisu">
+                <h3>Tiramisu</h3>
+                <div>
+                    <p>Sugar, Milk, Egg, Chocolate Sauce, Cream, Cocoa Powder, Biscuits</p>
+                    <p>$6.25</p>
+                </div>
+            </div>
+            <div class="top-pick">
+                <img src="Pictures/Dessert/Lime%20Сheesecake.jpg" alt="Lime Cheesecake">
+                <h3>Lime Cheesecake</h3>
+                <div>
+                    <p>Sugar, Milk, Egg, Chocolate Sauce, Cream, Cocoa Powder, Biscuits, Lime</p>
+                    <p>$10.25</p>
+                </div>
+            </div>
+        </div>
+</section>
+
+<section class="section hidden"> <!-- Pizza -->
+            <div class="featured-item">
+                <img src="Pictures/Pizza/IPizza.webp" alt="IPizza">
+                <div>
+                    <h3>IPizza</h3>
+                    <p>Romaine Lettuce, Red Onion, Mozzarella Cheese, Tomato Sauce, Olive Oil</p>
+                    <p>$24</p>
+                </div>
+            </div>
+            <div class="featured-item">
+                <img src="Pictures/Pizza/Cheese%20Pizza.png" alt="Cheese Pizza">
+                <div>
+                    <h3>Cheese Pizza</h3>
+                    <p>Tomato Sauce, Cheese</p>
+                    <p>$15</p>
+                </div>
+            </div>
+            <div class="featured-item">
+                <img src="Pictures/Pizza/Margherita%20Pizza.png" alt="Margherita Pizza">
+                <div>
+                    <h3>Margherita Pizza</h3>
+                    <p>Tomato, Mozzarella, Basil</p>
+                    <p>$18</p>
+                </div>
+            </div>
+            <div class="featured-item">
+                <img src="Pictures/Pizza/Pepperoni%20Pizza.png" alt="Pepperoni Pizza">
+                <div>
+                    <h3>Pepperoni Pizza</h3>
+                    <p>Spicy Chili, Honey</p>
+                    <p>$20</p>
+                </div>
+            </div>
+            <div class="featured-item">
+                <img src="Pictures/Pizza/Hawaiian%20Pizza.png" alt="Hawaiian Pizza">
+                <div>
+                    <h3>Hawaiian Pizza</h3>
+                    <p>Tomato Sauce, Mozzarella Cheese, Sliced Ham, Pineapple</p>
+                    <p>$16</p>
+                </div>
+            </div>
+            <div class="featured-item">
+                <img src="Pictures/Pizza/Pesto%20Veggie%20Pizza.jpg" alt="Pesto Veggie Pizza">
+                <div>
+                    <h3>Pesto Veggie Pizza</h3>
+                    <p>Basil Leaves, Parmesan Cheese, Pine Nuts, Fresh Garlic, Olive Oil</p>
+                    <p>$22</p>
+                </div>
+            </div>
+            <div class="featured-item">
+                <img src="Pictures/Pizza/Spicy%20Thai%20Pizza.png" alt="Spicy Thai Pizza">
+                <div>
+                    <h3>Spicy Thai Pizza</h3>
+                    <p>Mozzarella Cheese, Grilled Chicken, Red Bell Peppers, Carrots, Red onions, Green onions, Cilantro, Lime Wedges</p>
+                    <p>$25</p>
+                </div>
+            </div>
+            <div class="featured-item">
+                <img src="Pictures/Pizza/Buffalo%20Chicken%20Pizza.png" alt="Buffalo Chicken Pizza">
+                <div>
+                    <h3>Buffalo Chicken Pizza</h3>
+                    <p>Buffalo Sauce, Grilled Chicken, Mozzarella Cheese, Celery</p>
+                    <p>$22</p>
+                </div>
+            </div>
+            <div class="featured-item">
+                <img src="Pictures/Pizza/Veggie%20Delight%20Pizza.jpg" alt="Veggie Delight Pizza">
+                <div>
+                    <h3>Veggie Delight Pizza</h3>
+                    <p>Tomatoes, Green Bell Peppers, Mushrooms, Olives</p>
+                    <p>$20</p>
+                </div>
+            </div>
+            <div class="featured-item">
+                <img src="Pictures/Pizza/Meat%20Lovers%20Pizza.jpg" alt="Meat Lovers Pizza">
+                <div>
+                    <h3>Meat Lovers Pizza</h3>
+                    <p>Pepperoni, Sausage, Bacon, Ham, Mozzarella Cheese</p>
+                    <p>$25</p>
+                </div>
+            </div>
+            <div class="featured-item">
+                <img src="Pictures/Pizza/Seafood%20Pizza.jpg" alt="Seafood Pizza">
+                <div>
+                    <h3>Seafood Pizza</h3>
+                    <p>Shrimp, Crab Meat, Garlic Sauce, Mozzarella Cheese</p>
+                    <p>$28</p>
+                </div>
+            </div>
+            <div class="featured-item">
+                <img src="Pictures/Pizza/Broccoli%20Chicken%20Pizza.png" alt="Broccoli Chicken Pizza">
+                <div>
+                    <h3>Broccoli Chicken Pizza</h3>
+                    <p>Grilled Chicken, Broccoli, Alfredo Sauce, Mozzarella</p>
+                    <p>$23</p>
+                </div>
+            </div>
+            <div class="featured-item">
+                <img src="Pictures/Pizza/Greek%20Pizza.jpg" alt="Greek Pizza">
+                <div>
+                    <h3>Greek Pizza</h3>
+                    <p>Feta Cheese, Olives, Spinach, Red Onions</p>
+                    <p>$21</p>
+                </div>
+            </div>
+            <div class="featured-item">
+                <img src="Pictures/Pizza/Supreme%20Pizza.jpg" alt="Supreme Pizza">
+                <div>
+                    <h3>Supreme Pizza</h3>
+                    <p>Pepperoni, Sausage, Mushrooms, Green Peppers, Onions</p>
+                    <p>$26</p>
+                </div>
+            </div>
+            <div class="featured-item">
+                <img src="Pictures/Pizza/BBQ%20Chicken%20Pizza.png" alt="BBQ Chicken Pizza">
+                <div>
+                    <h3>BBQ Chicken Pizza</h3>
+                    <p>BBQ Sauce, Grilled Chicken, Red Onion, Cilantro</p>
+                    <p>$22</p>
+                </div>
+            </div>
+            <div class="featured-item">
+                <img src="Pictures/Pizza/Tuna%20Pizza.jpg" alt="Tuna Pizza">
+                <div>
+                    <h3>Tuna Pizza</h3>
+                    <p>Tuna, Tomato Sauce, Mozzarella, Basil</p>
+                    <p>$20</p>
+                </div>
+            </div>
+            <div class="featured-item">
+                <img src="Pictures/Pizza/Four%20Cheese%20Pizza.jpg" alt="Four Cheese Pizza">
+                <div>
+                    <h3>Four Cheese Pizza</h3>
+                    <p>Mozzarella, Parmesan, Cheddar, Blue Cheese</p>
+                    <p>$23</p>
+                </div>
+            </div>
+            <div class="featured-item">
+                <img src="Pictures/Pizza/Garlic%20Shrimp%20Pizza.jpeg" alt="Garlic Shrimp Pizza">
+                <div>
+                    <h3>Garlic Shrimp Pizza</h3>
+                    <p>Shrimp, Garlic Sauce, Mozzarella, Fresh Parsley</p>
+                    <p>$28</p>
+                </div>
+            </div>
+            <div class="featured-item">
+                <img src="Pictures/Pizza/Capricciosa%20Pizza.jpg" alt="Capricciosa Pizza">
+                <div>
+                    <h3>Capricciosa Pizza</h3>
+                    <p>Ham, Mushrooms, Artichokes, Black Olives</p>
+                    <p>$24</p>
+                </div>
+            </div>
+            <div class="featured-item">
+                <img src="Pictures/Pizza/Pesto%20Chicken%20Pizza.jpg" alt="Pesto Chicken Pizza">
+                <div>
+                    <h3>Pesto Chicken Pizza</h3>
+                    <p>Pesto Sauce, Grilled Chicken, Sun-Dried Tomatoes, Mozzarella</p>
+                    <p>$25</p>
+                </div>
+            </div>
+</section>
+
+<section class="section hidden"> <!-- Pasta -->
+    <div class="featured-item">
+        <img src="Pictures/Pasta/Spaghetti%20Pasta.jpg" alt="Spaghetti Pasta">
+        <div>
+            <h3>Spaghetti Pasta</h3>
+            <p>Milled Wheat, Water, Tomato Sauce, Tomatoes, Sugar, Salt, Cheese Paste</p>
+            <p>$10</p>
+        </div>
+    </div>
+    <div class="featured-item">
+        <img src="Pictures/Pasta/Chicken%20Chorizo%20Ragu.jpg" alt="Chicken Chorizo Ragu">
+        <div>
+            <h3>Chicken Chorizo Ragu</h3>
+            <p>Red Onion, Garlic Cloves, Tomatoes, Lemon, Paprika, Chicken Thighs</p>
+            <p>$16</p>
+        </div>
+    </div>
+    <div class="featured-item">
+        <img src="Pictures/Pasta/Sausage%20Ragu.jpg" alt="Sausage Ragu">
+        <div>
+            <h3>Sausage Ragu</h3>
+            <p>Sausage, Olive Oil, Onion, Celery, Chili Flakes, Black Pepper, Garlic, Chicken Stock, Parmesan Cheese</p>
+            <p>$18</p>
+        </div>
+    </div>
+    <div class="featured-item">
+        <img src="Pictures/Pasta/Ultimate%20Spaghetti%20Carbonara.jpg" alt="Ultimate Spaghetti Carbonara">
+        <div>
+            <h3>Ultimate Spaghetti Carbonara</h3>
+            <p>Pecorino Cheese, Egg, Spaghetti, Olive Oil, Garlic, Parmesan Cheese</p>
+            <p>$15</p>
+        </div>
+    </div>
+    <div class="featured-item">
+        <img src="Pictures/Pasta/Fettuccine%20Alfredo.png" alt="Fettuccine Alfredo">
+        <div>
+            <h3>Fettuccine Alfredo</h3>
+            <p>Fettuccine, Cream, Butter, Parmesan Cheese</p>
+            <p>$14.75</p>
+        </div>
+    </div>
+    <div class="featured-item">
+        <img src="Pictures/Pasta/Penne%20Arrabbiata.jpg" alt="Penne Arrabbiata">
+        <div>
+            <h3>Penne Arrabbiata</h3>
+            <p>Penne Pasta, Tomato Sauce, Garlic, Chili Flakes, Olive Oil</p>
+            <p>$12</p>
+        </div>
+    </div>
+    <div class="featured-item">
+        <img src="Pictures/Pasta/Baked%20Ziti.jpg" alt="Baked Ziti">
+        <div>
+            <h3>Baked Ziti</h3>
+            <p>Ziti Pasta, Marinara Sauce, Ricotta, Mozzarella Cheese</p>
+            <p>$16</p>
+        </div>
+    </div>
+    <div class="featured-item">
+        <img src="Pictures/Pasta/Linguine%20with%20Clam%20Sauce.jpg" alt="Linguine with Clam Sauce">
+        <div>
+            <h3>Linguine with Clam Sauce</h3>
+            <p>Linguine, Clams, Garlic, White Wine, Olive Oil</p>
+            <p>$18</p>
+        </div>
+    </div>
+    <div class="featured-item">
+        <img src="Pictures/Pasta/Lasagna.png" alt="Lasagna">
+        <div>
+            <h3>Lasagna</h3>
+            <p>Lasagna Noodles, Marinara Sauce, Ricotta, Mozzarella, Ground Beef</p>
+            <p>$20</p>
+        </div>
+    </div>
+    <div class="featured-item">
+        <img src="Pictures/Pasta/Macaroni%20and%20Cheese.jpg" alt="Macaroni and Cheese">
+        <div>
+            <h3>Macaroni and Cheese</h3>
+            <p>Macaroni, Cheddar Cheese, Milk, Butter</p>
+            <p>$10.25</p>
+        </div>
+    </div>
+</section>
+
+<section class="section hidden"> <!-- Salad -->
+    <div class="featured-item">
+        <img src="Pictures/Salad/Salmon%20Salad.png" alt="Salmon Salad">
+        <div>
+            <h3>Salmon Salad</h3>
+            <p>Atlantic Salmon, Romaine Lettuce, Red Onion, Red Potato, Shredded Carrot, Tomato, Lemon Vinaigrette Dressing</p>
+            <p>$12.5</p>
+        </div>
+    </div>
+    <div class="featured-item">
+        <img src="Pictures/Salad/Caesar%20Salad.jpg" alt="Caesar Salad">
+        <div>
+            <h3>Caesar Salad</h3>
+            <p>Egg, Lemon Juice, Mustard, Olive Oil, Parmesan Cheese</p>
+            <p>$16.75</p>
+        </div>
+    </div>
+    <div class="featured-item">
+        <img src="Pictures/Salad/Greek%20Salad.jpg" alt="Greek Salad">
+        <div>
+            <h3>Greek Salad</h3>
+            <p>Cucumber, Tomato, Red Onion, Feta Cheese, Kalamata Olives</p>
+            <p>$14</p>
+        </div>
+    </div>
+    <div class="featured-item">
+        <img src="Pictures/Salad/Caprese%20Salad.png" alt="Caprese Salad">
+        <div>
+            <h3>Caprese Salad</h3>
+            <p>Tomato, Fresh Mozzarella, Basil, Olive Oil</p>
+            <p>$12</p>
+        </div>
+    </div>
+    <div class="featured-item">
+        <img src="Pictures/Salad/Spinach%20Salad.png" alt="Spinach Salad">
+        <div>
+            <h3>Spinach Salad</h3>
+            <p>Spinach, Strawberries, Almonds, Balsamic Vinaigrette</p>
+            <p>$11.25</p>
+        </div>
+    </div>
+    <div class="featured-item">
+        <img src="Pictures/Salad/Cobb%20Salad.jpg" alt="Cobb Salad-Soup">
+        <div>
+            <h3>Cobb Salad-Soup</h3>
+            <p>Romaine, Egg, Bacon, Avocado, Blue Cheese</p>
+            <p>$15</p>
+        </div>
+    </div>
+    <div class="featured-item">
+        <img src="Pictures/Salad/Kale%20Salad.jpg" alt="Kale Salad">
+        <div>
+            <h3>Kale Salad</h3>
+            <p>Kale, Dried Cranberries, Walnuts, Lemon Dressing</p>
+            <p>$10</p>
+        </div>
+    </div>
+    <div class="featured-item">
+        <img src="Pictures/Salad/Quinoa%20Salad.jpg" alt="Quinoa Salad">
+        <div>
+            <h3>Quinoa Salad</h3>
+            <p>Quinoa, Cucumber, Bell Peppers, Feta, Lemon Vinaigrette, Avocado</p>
+            <p>$13</p>
+        </div>
+    </div>
+    <div class="featured-item">
+            <img src="Pictures/Salad/Waldorf%20Salad.jpg" alt="Waldorf Salad">
+        <div>
+            <h3>Waldorf Salad</h3>
+            <p>Apples, Celery, Walnuts, Grapes, Mayonnaise</p>
+            <p>$12</p>
+        </div>
+    </div>
+    <div class="featured-item">
+        <img src="Pictures/Salad/Nicoise%20Salad.jpg" alt="Nicoise Salad">
+        <div>
+            <h3>Nicoise Salad</h3>
+            <p>Tuna, Green Beans, Potatoes, Boiled Eggs, Olives</p>
+            <p>$17</p>
+        </div>
+    </div>
+    <div class="featured-item">
+            <img src="Pictures/Salad/Asian%20Chicken%20Salad.jpg" alt="Asian Chicken Salad">
+        <div>
+            <h3>Asian Chicken Salad</h3>
+            <p>Grilled Chicken, Cabbage, Carrots, Sesame Dressing</p>
+            <p>$14.5</p>
+        </div>
+    </div>
+    <div class="featured-item">
+        <img src="Pictures/Salad/Watermelon%20Feta%20Salad.jpg" alt="Watermelon Feta Salad">
+        <div>
+            <h3>Watermelon Feta Salad</h3>
+            <p>Watermelon, Feta Cheese, Mint, Balsamic Reduction</p>
+            <p>$12</p>
+        </div>
+    </div>
+    <div class="featured-item">
+        <img src="Pictures/Salad/Avocado%20Salad.jpg" alt="Avocado Salad">
+        <div>
+            <h3>Avocado Salad</h3>
+            <p>Avocado, Mixed Greens, Cherry Tomatoes, Lime Vinaigrette, Cucumber</p>
+            <p>$13</p>
+        </div>
+    </div>
+</section>
+
+<section class="section hidden"> <!-- Dessert -->
+    <div class="featured-item">
+        <img src="Pictures/Dessert/Sticky%20Toffee%20Pudding.jpg" alt="Sticky Toffee Pudding">
+        <div>
+            <h3>Sticky Toffee Pudding</h3>
+            <p>Sugar, Milk, Egg, Rice Bran Oil, Chocolate Sauce, Cream</p>
+            <p>$9.25</p>
+        </div>
+    </div>
+    <div class="featured-item">
+        <img src="Pictures/Dessert/Chocolate%20Cake.jpg" alt="Chocolate Cake">
+        <div>
+            <h3>Chocolate Cake</h3>
+            <p>Sugar, Milk, Egg, Chocolate Sauce, Cream</p>
+            <p>$8.75</p>
+        </div>
+    </div>
+    <div class="featured-item">
+        <img src="Pictures/Dessert/Tiramisu.png" alt="Tiramisu">
+        <div>
+            <h3>Tiramisu</h3>
+            <p>Sugar, Milk, Egg, Chocolate Sauce, Cream, Cocoa Powder, Biscuits</p>
+            <p>$6.25</p>
+        </div>
+    </div>
+    <div class="featured-item">
+        <img src="Pictures/Dessert/Lime%20Сheesecake.jpg" alt="Lime Cheesecake">
+        <div>
+            <h3>Lime Cheesecake</h3>
+            <p>Sugar, Milk, Egg, Chocolate Sauce, Cream, Cocoa Powder, Biscuits, Lime</p>
+            <p>$10.25</p>
+        </div>
+    </div>
+    <div class="featured-item">
+        <img src="Pictures/Dessert/Apple%20Pie.jpg" alt="Apple Pie">
+        <div>
+            <h3>Apple Pie</h3>
+            <p>Apples, Cinnamon, Sugar, Pie Crust</p>
+            <p>$9</p>
+        </div>
+    </div>
+    <div class="featured-item">
+            <img src="Pictures/Dessert/Strawberry%20Shortcake.jpg" alt="Strawberry Shortcake">
+        <div>
+            <h3>Strawberry Shortcake</h3>
+            <p>Shortcake, Fresh Strawberries, Whipped Cream</p>
+            <p>$8</p>
+        </div>
+    </div>
+    <div class="featured-item">
+            <img src="Pictures/Dessert/Creme%20Brulee.png" alt="Creme Brulee">
+        <div>
+            <h3>Creme Brulee</h3>
+            <p>Heavy Cream, Egg Yolks, Sugar, Vanilla Bean</p>
+            <p>$11.25</p>
+        </div>
+    </div>
+    <div class="featured-item">
+        <img src="Pictures/Dessert/Brownie.jpg" alt="Brownie">
+        <div>
+            <h3>Brownie</h3>
+            <p>Cocoa Powder, Butter, Sugar, Eggs, Flour</p>
+            <p>$7.75</p>
+        </div>
+    </div>
+    <div class="featured-item">
+        <img src="Pictures/Dessert/Lemon%20Tart.jpg" alt="Lemon Tart">
+        <div>
+            <h3>Lemon Tart</h3>
+            <p>Lemon Curd, Tart Shell, Whipped Cream</p>
+            <p>$9.25</p>
+        </div>
+    </div>
+    <div class="featured-item">
+        <img src="Pictures/Dessert/Panna%20Cotta.jpg" alt="Panna Cotta">
+        <div>
+            <h3>Panna Cotta</h3>
+            <p>Heavy Cream, Sugar, Gelatin, Vanilla</p>
+            <p>$10</p>
+        </div>
+    </div>
+    <div class="featured-item">
+        <img src="Pictures/Dessert/Ice%20Cream%20Sundae.jpg" alt="Ice Cream Sundae">
+        <div>
+            <h3>Ice Cream Sundae</h3>
+            <p>Vanilla Ice Cream, Chocolate Sauce, Whipped Cream, Cherries</p>
+            <p>$6.25</p>
+        </div>
+    </div>
+    <div class="featured-item">
+        <img src="Pictures/Dessert/Carrot%20Cake.jpg" alt="Carrot Cake">
+        <div>
+            <h3>Carrot Cake</h3>
+            <p>Grated Carrots, Walnuts, Cinnamon, Cream Cheese Frosting</p>
+            <p>$9.5</p>
+        </div>
+    </div>
+    <div class="featured-item">
+        <img src="Pictures/Dessert/Macaron.jpg" alt="Macaron">
+        <div>
+            <h3>Macaron</h3>
+            <p>Almond Flour, Egg Whites, Sugar, Buttercream Filling</p>
+            <p>$2.5</p>
+        </div>
+    </div>
+</section>
+
+<section class="section hidden"> <!-- Drinks -->
+    <div class="featured-item">
+        <img src="Pictures/Drinks/Coca%20Cola%20(0.5%20L).jpg" alt="Coca Cola (0.5 L)">
+        <div>
+            <h3>Coca Cola (0.5 L)</h3>
+            <p>$2.5</p>
+        </div>
+    </div>
+    <div class="featured-item">
+        <img src="Pictures/Drinks/Fanta%20(0.5%20L).jpg" alt="Fanta (0.5 L)">
+        <div>
+            <h3>Fanta (0.5 L)</h3>
+            <p>$2.5</p>
+        </div>
+    </div>
+    <div class="featured-item">
+        <img src="Pictures/Drinks/Sprite%20(0.5%20L).jpg" alt="Sprite (0.5 L)">
+        <div>
+            <h3>Sprite (0.5 L)</h3>
+            <p>$2.5</p>
+        </div>
+    </div>
+    <div class="featured-item">
+        <img src="Pictures/Drinks/Pepsi%20(0.5%20L).jpg" alt="Pepsi (0.5 L)">
+        <div>
+            <h3>Pepsi (0.5 L)</h3>
+            <p>$2.5</p>
+        </div>
+    </div>
+    <div class="featured-item">
+        <img src="Pictures/Drinks/Orange%20Juice%20(0.33%20L).jpg" alt="Orange Juice (0.33 L)">
+        <div>
+            <h3>Orange Juice (0.33 L)</h3>
+            <p>$2.5</p>
+        </div>
+    </div>
+    <div class="featured-item">
+        <img src="Pictures/Drinks/Apple%20Juice%20(0.33%20L).jpg" alt="Apple Juice (0.33 L)">
+        <div>
+            <h3>Apple Juice (0.33 L)</h3>
+            <p>$2.5</p>
+        </div>
+    </div>
+</section>
+
+<section class="section hidden"> <!-- Cocktails -->
+    <div class="featured-item">
+        <img src="Pictures/Cocktails/Mojito%20(0.33%20L).jpg" alt="Mojito (0.33 L)">
+        <div>
+            <h3>Mojito (0.33 L)</h3>
+            <p>White Rum, Lime Juice, Sugar, Mint Leaves, Soda Water</p>
+            <p>$12</p>
+        </div>
+    </div>
+    <div class="featured-item">
+        <img src="Pictures/Cocktails/Margarita%20(0.33%20L).jpg" alt="Margarita (0.33 L)">
+        <div>
+            <h3>Margarita (0.33 L)</h3>
+            <p>Tequila, Triple Sec, Lime Juice, Salt</p>
+            <p>$14</p>
+        </div>
+    </div>
+    <div class="featured-item">
+        <img src="Pictures/Cocktails/Pina%20Colada%20(0.33%20L).jpg" alt="Pina Colada (0.33 L)">
+        <div>
+            <h3>Pina Colada (0.33 L)</h3>
+            <p>Rum, Coconut Cream, Pineapple Juice</p>
+            <p>$15</p>
+        </div>
+    </div>
+    <div class="featured-item">
+        <img src="Pictures/Cocktails/Strawberry%20Cosmopolitan%20(0.33%20L).jpg" alt="Strawberry Cosmopolitan (0.33 L)">
+        <div>
+            <h3>Strawberry Cosmopolitan (0.33 L)</h3>
+            <p>Vodka, Triple Sec, Cranberry Juice, Lime Juice, Strawberry</p>
+            <p>$13</p>
+        </div>
+    </div>
+    <div class="featured-item">
+        <img src="Pictures/Cocktails/Old%20Fashioned%20(0.33%20L).jpg" alt="Old Fashioned (0.33 L)">
+        <div>
+            <h3>Old Fashioned (0.33 L)</h3>
+            <p>Bourbon, Sugar, Angostura Bitters, Orange Peel</p>
+            <p>$16</p>
+        </div>
+    </div>
+    <div class="featured-item">
+        <img src="Pictures/Cocktails/Negroni%20(0.33%20L).jpg" alt="Negroni (0.33 L)">
+        <div>
+            <h3>Negroni (0.33 L)</h3>
+            <p>Gin, Campari, Sweet Vermouth</p>
+            <p>$14</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2024 iPizza. All rights reserved.</p>
+</footer>
+
+<script src="scripts.js"></script>
+
+<button id="scrollTopButton" class="scroll-top hidden">▲</button>
+
+</body>
+
+</html>
