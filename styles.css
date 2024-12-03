@@ -13,7 +13,8 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 16px 24px;
+        padding: 10px 20px;
+        flex-wrap: wrap;
     }
 
     header h1
@@ -23,9 +24,10 @@
         color: var(--text-color);
     }
 
-    header button
+    header button,
+    header .dropdown
     {
-        margin: 0 10px;
+        margin: 5px;
         border: none;
         background-color: var(--bg-color);
         color: white;
@@ -538,15 +540,24 @@
         }
     }
 
-    @media screen and (max-width: 768px) {
-        header {
+    @media screen and (max-width: 768px)
+    {
+        header
+        {
             flex-direction: column;
-            align-items: flex-start;
+            align-items: stretch;
         }
 
-        header button {
-            margin: 5px 0;
+        header button,
+        header .dropdown
+        {
+            flex: none;
             width: 100%;
             text-align: center;
+        }
+
+        header .phone-number
+        {
+            margin-bottom: 10px;
         }
     }
