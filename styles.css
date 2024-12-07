@@ -3,7 +3,6 @@
         margin: 0;
         background-color: var(--bg-color);
         color: var(--text-color);
-        overflow-x: hidden;
         transition: background-color 0.3s ease, color 0.3s ease;
     }
 
@@ -52,7 +51,6 @@
         left: 50%;
         transform: translateX(-50%);
         text-align: center;
-        max-width: 100%;
     }
 
     .contact-button
@@ -562,5 +560,16 @@
         header .phone-number
         {
             margin-bottom: 10px;
+        }
+
+        .contact-button {
+            font-size: 14px;
+            padding: 8px 16px;
+            bottom: 10px;
+            right: 10px;
+        }
+
+        .contact-button.expanded::after {
+            font-size: 12px;
         }
     }
