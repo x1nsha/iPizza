@@ -129,6 +129,7 @@ document.getElementById('languageSelect').addEventListener('change', function ()
             contact: "Contact Us",
             searchPlaceholder: "Search for delicious items...",
             translateLabel: "Translate",
+            footer: "© 2024 iPizza. All rights reserved."
         },
         ru: {
             header: "Добро пожаловать в iPizza 🍕",
@@ -137,6 +138,7 @@ document.getElementById('languageSelect').addEventListener('change', function ()
             contact: "Свяжитесь с нами",
             searchPlaceholder: "Ищите вкусные блюда...",
             translateLabel: "Перевести",
+            footer: "© 2024 iPizza. Все права защищены."
         },
         it: {
             header: "Benvenuti da iPizza 🍕",
@@ -145,6 +147,7 @@ document.getElementById('languageSelect').addEventListener('change', function ()
             contact: "Contattaci",
             searchPlaceholder: "Cerca articoli deliziosi...",
             translateLabel: "Traduci",
+            footer: "© 2024 iPizza. Tutti i diritti riservati."
         },
     };
     const textContent = translations[selectedLanguage];
@@ -154,11 +157,13 @@ document.getElementById('languageSelect').addEventListener('change', function ()
     document.querySelector('.hero-overlay p:nth-of-type(2)').textContent = textContent.discount;
     document.querySelector('.contact-button').textContent = textContent.contact;
     document.querySelector('#searchPanel input').placeholder = textContent.searchPlaceholder;
+    document.querySelector('footer').textContent = textContent.footer;
 });
 
 document.getElementById('languageSelect').addEventListener('change', () =>
 {
     const contactButton = document.getElementById('contactButton');
+
     contactButton.classList.remove('expanded');
 });
 
