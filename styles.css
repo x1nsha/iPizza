@@ -63,8 +63,6 @@
         border-radius: 25px;
         cursor: pointer;
         transition: all 0.4s ease;
-        position: relative;
-        max-width: 400px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
         font-family: Arial, sans-serif;
     }
@@ -430,7 +428,7 @@
         opacity: 1;
         visibility: visible;
     }
-
+    
     .translate-container
     {
         display: flex;
@@ -562,16 +560,5 @@
         header .phone-number
         {
             margin-bottom: 10px;
-        }
-
-        .contact-button {
-            font-size: 14px;
-            padding: 8px 16px;
-            bottom: 10px;
-            right: 10px;
-        }
-
-        .contact-button.expanded::after {
-            font-size: 12px;
         }
     }
