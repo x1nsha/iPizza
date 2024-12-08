@@ -567,4 +567,9 @@
             left: 10%;
             width: 100px;
         }
+
+        .contact-button.expanded::after
+        {
+            width: 100px;
+        }
     }
