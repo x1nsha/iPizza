@@ -564,6 +564,7 @@
 
         .contact-button.expanded
         {
-            left: 30%;
+            left: 10%;
+            width: 80%;
         }
     }
