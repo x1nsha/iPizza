@@ -428,7 +428,7 @@
         opacity: 1;
         visibility: visible;
     }
-    
+
     .translate-container
     {
         display: flex;
@@ -562,6 +562,11 @@
             margin-bottom: 10px;
         }
 
+        .contact-button
+        {
+            left: 50%;
+        }
+        
         .contact-button.expanded
         {
             left: 10%;
@@ -570,7 +575,7 @@
 
         .contact-button.expanded::after
         {
-            width: 200px;
+            width: 100px;
             height: 100px;
         }
     }
