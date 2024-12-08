@@ -571,5 +571,6 @@
         .contact-button.expanded::after
         {
             width: 100px;
+            height: 100px;
         }
     }
