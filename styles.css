@@ -570,7 +570,7 @@
 
         .contact-button.expanded::after
         {
-            width: 100px;
+            width: 200px;
             height: 100px;
         }
     }
