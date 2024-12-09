@@ -90,7 +90,6 @@
         content: "+123 45 678 90 12";
         font-size: 18px;
         color: #fff;
-
         left: 0;
         right: 0;
         margin: auto;
@@ -559,7 +558,7 @@
 
         .contact-button.expanded
         {
-            width: 180px;
+            width: 200px;
             height: 35px;
             left: 80px;
         }
