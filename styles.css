@@ -79,7 +79,7 @@
         height: 50px;
         font-size: 20px;
         border-radius: 25px;
-        background-color: #4caf50;
+        background-color: #cc5200;
         color: #fff;
         box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
         position: relative;
@@ -557,8 +557,9 @@
             text-align: center;
         }
 
-        header .phone-number
+        .contact-button.expanded
         {
-            margin-bottom: 10px;
+            width: 200px;
+            height: 40px;
         }
     }
